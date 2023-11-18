@@ -57,6 +57,11 @@ const config: HardhatUserConfig = {
       gas: 12000000,
       blockGasLimit: 12000000
     },
+    sepolia: {
+      url: "https://eth-sepolia.g.alchemy.com/v2/" + process.env.SEPOLIA_API_KEY,
+      // @ts-ignore
+      accounts: [`0x${process.env.SEPOLIA_DEPLOY_PRIVATE_KEY}`],
+    },
     // kovan: {
     //   url: "https://kovan.infura.io/v3/" + process.env.INFURA_TOKEN,
     //   // @ts-ignore
