@@ -57,21 +57,21 @@ const config: HardhatUserConfig = {
       gas: 12000000,
       blockGasLimit: 12000000
     },
-    kovan: {
-      url: "https://kovan.infura.io/v3/" + process.env.INFURA_TOKEN,
-      // @ts-ignore
-      accounts: [`0x${process.env.KOVAN_DEPLOY_PRIVATE_KEY}`],
-    },
-    staging_mainnet: {
-      url: "https://mainnet.infura.io/v3/" + process.env.INFURA_TOKEN,
-      // @ts-ignore
-      accounts: [`0x${process.env.STAGING_MAINNET_DEPLOY_PRIVATE_KEY}`],
-    },
-    production: {
-      url: "https://mainnet.infura.io/v3/" + process.env.INFURA_TOKEN,
-      // @ts-ignore
-      accounts: [`0x${process.env.PRODUCTION_MAINNET_DEPLOY_PRIVATE_KEY}`],
-    },
+    // kovan: {
+    //   url: "https://kovan.infura.io/v3/" + process.env.INFURA_TOKEN,
+    //   // @ts-ignore
+    //   accounts: [`0x${process.env.KOVAN_DEPLOY_PRIVATE_KEY}`],
+    // },
+    // staging_mainnet: {
+    //   url: "https://mainnet.infura.io/v3/" + process.env.INFURA_TOKEN,
+    //   // @ts-ignore
+    //   accounts: [`0x${process.env.STAGING_MAINNET_DEPLOY_PRIVATE_KEY}`],
+    // },
+    // production: {
+    //   url: "https://mainnet.infura.io/v3/" + process.env.INFURA_TOKEN,
+    //   // @ts-ignore
+    //   accounts: [`0x${process.env.PRODUCTION_MAINNET_DEPLOY_PRIVATE_KEY}`],
+    // },
     // To update coverage network configuration got o .solcover.js and update param in providerOptions field
     coverage: {
       url: "http://127.0.0.1:8555", // Coverage launches its own ganache-cli client
