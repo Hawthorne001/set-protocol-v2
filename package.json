@@ -108,7 +108,7 @@
   },
   "dependencies": {
     "@openzeppelin-upgradeable/contracts": "npm:@openzeppelin/contracts-upgradeable@4.5.2",
-    "ethers": "^5.5.2",
+    "ethers": "^5.7.2",
     "fs-extra": "^9.0.0",
     "jsbi": "^3.2.5",
     "module-alias": "^2.2.2",
